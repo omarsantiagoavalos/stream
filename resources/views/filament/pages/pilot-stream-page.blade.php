@@ -8,14 +8,15 @@
         ">
             @foreach ($pilots as $pilot)
                 @if ($pilot->status === 'Online')  {{-- Solo mostrar si está en línea --}}
-                    <div style="
+                    <div style=" 
                         border: 1px solid #ddd; 
-                        padding: 10px; 
+                        padding: 4px; 
                         border-radius: 8px;
-                        background-color: #f9f9f9;
+                        background-color: #a8a8a8;
                         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
                     ">
-                        <h2 style="font-size: 18px; margin-bottom: 10px; text-align: center;">
+                        <h2 style="font-size: 18px; margin-bottom: 1px; text-align: center; 
+                            color: {{ app('config')->get('app.theme') == 'dark' ? '#fff' : '#000' }};">
                             {{ $pilot->name }}
                         </h2>
 
