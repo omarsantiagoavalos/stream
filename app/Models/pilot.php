@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class pilot extends Model
+class Pilot extends Model
 {
     protected $fillable = [
         'id_employee',
@@ -14,5 +14,4 @@ class pilot extends Model
         'streaming_key',
         'status',
     ];
-    
 }

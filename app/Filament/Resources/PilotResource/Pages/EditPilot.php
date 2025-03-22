@@ -16,9 +16,4 @@ class EditPilot extends EditRecord
             Actions\DeleteAction::make(),
         ];
     }
-
-    protected function getRedirectUrl(): string
-    {
-        return $this->getResource()::getUrl('index'); // Redirige al listado después de crear
-    }
 }

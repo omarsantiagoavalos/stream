@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('image');
             $table->string('streaming_key');
             $table->string('status');
-
+            
             $table->timestamps();
         });
     }
